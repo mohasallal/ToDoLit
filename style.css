@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  height: 100vh;
+  background: linear-gradient(90deg, #56ccf2, #2f80ed);
+}
+
+.Container {
+  max-width: 500px;
+  width: 90%;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input {
+  position: relative;
+  width: 90%;
+  height: 40px;
+  display: flex;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.input input {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid rgb(204, 204, 204);
+  outline: none;
+  border-radius: 10px;
+}
+
+.add {
+  width: 40px;
+  aspect-ratio: 1/1;
+  background-color: rgb(140, 0, 255);
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+
+.add:hover {
+  background-color: rgb(173, 73, 255);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.ListContainer {
+  width: 90%;
+}
+
+.list {
+  box-sizing: border-box;
+  border: 1px solid rgb(230, 230, 230);
+  padding-left: 10px;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin: 10px 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.ToDo {
+  width: 100%;
+  max-width: calc(100% - 40px);
+}
+
+.Delete {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  min-height: 100%;
+  width: 40px;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.Delete:hover {
+  background-color: rgb(255, 76, 76);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.list:hover > .Delete {
+  opacity: 1;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
