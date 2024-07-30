@@ -93,6 +93,10 @@ h1 {
   max-width: calc(100% - 40px);
 }
 
+.ToDo p {
+  margin: 10px 0;
+}
+
 .Delete {
   opacity: 0;
   display: flex;
